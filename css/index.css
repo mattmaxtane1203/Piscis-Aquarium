@@ -7,6 +7,7 @@
 
 h1 {
     font-size: 100px;
+    text-align: center;
 }
 
 h3 {
@@ -20,7 +21,25 @@ h3 {
 
 .welcome {
     height: 100vh;
-    background-image: url('https://asset.japan.travel/image/upload/v1648108505/okinawa/H_00376_001.jpg');
+    background-image: url(../assets/H_00376_001.jpg);
+    background-size: cover;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitles {
+    display: flex;
+    flex-direction: column;
+}
+
+.marine-life {
+    height: 100vh;
+    background-color: black;
+    background-image: url(../assets/shutterstock_400476850.jpg);
     background-size: cover;
 
     display: flex;
@@ -28,3 +47,39 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
+.marine-animals {
+    height: 100vh;
+    background-color: black;
+    background-image: url(/assets/marine-animals.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redirect-button {
+    width: 270px;
+    height: 95px;
+    background-color: #242F9B;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 3px solid white;
+}
+
+.redirect-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: solid black
+}
+
