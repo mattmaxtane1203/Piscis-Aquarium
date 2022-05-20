@@ -1,0 +1,36 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #242F9B;
+    height: 75px;
+}
+
+nav h1 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.navigation-buttons-container {
+    justify-content: space-evenly;
+}
+
+.navigation-button {
+    font-size: 25px;
+    border: none;
+    background: none;
+    margin-right: 20px;
+}
+
+.navigation-button:hover {
+    color: black;
+}
+

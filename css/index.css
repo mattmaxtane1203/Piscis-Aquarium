@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.content {
+    height: 100vh;
+}
+
+.welcome {
+    height: 100vh;
+    background-image: url('https://asset.japan.travel/image/upload/v1648108505/okinawa/H_00376_001.jpg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
