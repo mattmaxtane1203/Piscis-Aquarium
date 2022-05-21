@@ -26,10 +26,6 @@ footer {
     text-decoration: none;
 }
 
-.fa-instagram:hover {
-    opacity: 0.5;
-}
-
-.fa-twitter:hover {
+.fa:hover {
     opacity: 0.5;
 }

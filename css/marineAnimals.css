@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 75px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.content {
+    background-color: black;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-image: url(../assets/marine-life.jpg);
+    background-size: cover;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.content-column {
+    width: 50%;
+
+    text-align: center;
+}
+
+.content-column > p {
+    font-size: 20px;
+    margin: 100px;
+    text-align: justify;
+}
+
+#marine-mammals {
+    background-image: url(../assets/manatees.jpg);
+    background-size: cover;
+}
+
+#other-marine-vertebrates {
+    background-image: url(../assets/clownfish.jpg);
+    background-size: cover;
+}
+
+#marine-invertebrates-and-planktons {
+    background-image: url(../assets/jellyfish.jpg);
+    background-size: cover;
+}
+
+.suggestions {
+    height: 50px;
+    background-color: #242F9B;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redirect-button {
+    width: 270px;
+    height: 30px;
+    background-color: #242F9B;
+    font-size: 20px;
+    border: 3px solid white;
+}
+
+.redirect-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: solid black
+}
+
+.items {
+    margin: 0 20px 0 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    .information {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .content-column > p {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+}
+

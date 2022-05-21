@@ -25,7 +25,8 @@ nav h1 {
 }
 
 .page-active {
-    color: black;
+    color: white;
+    text-decoration: underline;
 }
 
 .sidebar {

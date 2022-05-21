@@ -20,14 +20,13 @@
     <script src="../script/redirect.js"></script>
     <script src="../script/hamburger.js"></script>
 
-    <title>Marine Animals | Piscis Aquarium</title>
+    <title>Marine Life | Piscis Aquarium</title>
 </head>
 <body>
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button" onclick="marineLife()">Marine Life</button>
         <button class="navigation-button page-active">Marine Animals</button>
         <button class="navigation-button" onclick="aboutUs()">About Us</button>
     </div>
@@ -41,7 +40,6 @@
         <!-- Navigation Buttons -->
         <div class="navigation-buttons-container">
             <button class="navigation-button" onclick="home()">Home</button>
-            <button class="navigation-button" onclick="marineLife()">Marine Life</button>
             <button class="navigation-button page-active">Marine Animals</button>
             <button class="navigation-button" onclick="aboutUs()">About Us</button>
         </div>
@@ -55,15 +53,66 @@
 
     </nav>
 
+    <div class="content">
+
+        <section class="introduction">
+            <h1>MARINE ANIMALS</h1>
+            <h3>Marine life are the plants, animals and organisms that live in bodies of water. It is one of the most crucial aspects of nature, responsible for creating oxygen and even new land.</h3>
+            <h3>Scroll to learn more about the major types of marine animals.</h3>
+        </section>
+
+        <section class="information" id="marine-mammals">
+
+            <div class="content-column">
+                <h2>Marine Mammals</h2>
+            </div>
+            
+            <div class="content-column">
+                <p>Most people think about whales, dolphins and otters when they think about the ocean. These are species of marine mammals - aquatic mammals that depend on the oceans and the marine ecosystem for survival. Adaptation of mammals to the marine ecosystem is varied. For example, cetaceans (whales, dolphins etc.) and sirenians (manatees, dugongs etc.) are fully aquatic mammals, but other mammals, such as seals and sea-lions are semi-aquatic - they spend most of their time underwater but need to return to land for other priorities such as mating and breeding.</p>
+            </div>
+
+        </section>
+
+        <section class="information" id="other-marine-vertebrates">
+            
+            <div class="content-column">
+                <h2>Marine Vertebrates</h2>
+            </div>
+
+            <div class="content-column">
+                <p>Mammals are a type of vertebrate, but there’s more types of vertebrates that are considered to be marine animals. Marine vertebrates are marine animals that have vertebral columns for internal support. These include fishes, reptiles, amphibians and even birds. Fishes can be jawless - hagfish, lampreys etc. - cartilaginous fish - made of cartilage rather than bone such as sharks and rays - or bony - carp, eel, pufferfish etc. Tetrapods, which are animals with limbs, that are aquatic include amphibians, reptiles - marine iguana, sea turtle, marine snakes etc. - and birds - penguins, seagulls, albatrosses etc. Did you know that even polar bears count as a marine animal?</p>
+            </div>
+
+        </section>
+
+        <!-- TODO: Fix Wrapping Issues -->
+        <section class="information" id="marine-invertebrates-and-planktons">
+
+            <div class="content-column">
+                <h2>Marine Invertebrates</h2>
+            </div>
+            
+            <div class="content-column">
+                <p>Marine invertebrates are aquatic animals that do not have a vertebral column to support their structure. To maintain structural integrity, most have evolved to form shells and hard exoskeletons. Major types of marine invertebrates includes sponges - bodies full of pores, cnidarians - presence of stinging cells for capturing prey such as jellyfishes, worms - distinguished by its long cylindrical body with no limbs, echinoderms - radial symmetry that are usually five-point such as starfishes and sea urchins, mollusks - protective shells such as colossal squid, nautilus and sea snails, and arthropods - segmented bodies with jointed limbs such as crustaceans (crabs).</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="suggestions">
+        <h3 class="items">Suggestions?</h3>
+        <button class="redirect-button items" onclick="contactUs()">CONTACT US</button>
+    </div>
+
     <footer>
 
         <h3 class="footer-text">&copy; 2022 | Matthew Tane for ASG COMP6800001 - Human Computer Interaction</h3>
 
         <div class="social-media-icons-container">
-            <a href="https://www.instagram.com/matthewtane1203/" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/MisterSandbox" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/matthewtane1203/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/MisterSandbox" target="_blank" class="fa fa-twitter"></a>
         </div>
     </footer>
-    
 </body>
 </html>

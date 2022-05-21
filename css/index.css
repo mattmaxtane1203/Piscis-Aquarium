@@ -51,7 +51,7 @@ h3 {
 .contact-us {
     height: 100vh;
     background-color: black;
-    background-image: url(/assets/marine-animals.jpg);
+    background-image: url(../assets/marine-animals.jpg);
     background-size: cover;
 
     display: flex;
