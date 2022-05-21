@@ -15,5 +15,5 @@ function aboutUs(){
 }
 
 function contactUs(){
-    window.open("../html/marineLife.html", "_self");
+    window.open("../html/contactUs.html", "_self");
 }
