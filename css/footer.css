@@ -1,0 +1,35 @@
+footer {
+    height: 50px;
+    background-color: #242F9B;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 15px;
+    margin-left: 10px;
+
+    text-align: left;
+}
+
+.social-media-icons-container {
+    margin-right: 10px;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-instagram:hover {
+    opacity: 0.5;
+}
+
+.fa-twitter:hover {
+    opacity: 0.5;
+}

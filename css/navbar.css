@@ -15,12 +15,31 @@ nav {
 }
 
 nav h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 10px;
 }
 
 .navigation-buttons-container {
     justify-content: space-evenly;
+    display: none;
+}
+
+.page-active {
+    color: black;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #242F9B;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigation-button {
@@ -32,5 +51,67 @@ nav h1 {
 
 .navigation-button:hover {
     color: black;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    margin-right: 20px;
+
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: white;
+    border-radius: 6px;
+    z-index: 999;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: #646FD4;
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span {
+    background-color: #646FD4;
+}
+
+@media only screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation-buttons-container {
+        display: block;
+    }
 }
 

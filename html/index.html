@@ -9,15 +9,30 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet"> 
+
+    <!-- Script -->
+    <script src="../script/redirect.js"></script>
+    <script src="../script/hamburger.js"></script>
+
 </head>
 
 <!-- Body -->
 <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="navigation-button page-active">Home</button>
+        <button class="navigation-button" onclick="marineLife()">Marine Life</button>
+        <button class="navigation-button" onclick="marineAnimals()">Marine Animals</button>
+        <button class="navigation-button" onclick="aboutUs()">About Us</button>
+    </div>
     
     <!-- Navigation Bar -->
     <nav>
@@ -33,6 +48,13 @@
             <button class="navigation-button">About Us</button>
         </div>
 
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </nav>
 
     <!-- Content Section -->
@@ -45,7 +67,7 @@
         </section>
 
         <!-- Learn More Section -->
-        <section class="marine-life">
+        <section class="learn-more">
 
             <div class="subtitles">
                 <h1>LEARN MORE</h1>
@@ -53,26 +75,32 @@
             </div>
             
             <div class="buttons-container">
-                <button class="redirect-button">MARINE LIFE</button>
-                <button class="redirect-button">MARINE ANIMALS</button>
+                <button class="redirect-button" onclick="marineLife()">MARINE LIFE</button>
+                <button class="redirect-button" onclick="marineAnimals()">MARINE ANIMALS</button>
             </div>
 
         </section>
 
-        <section class="marine-animals">
+        <section class="contact-us">
 
             <div class="subtitles">
                 <h1>CONTACT US</h1>
                 <h3>Suggestions are always helpful to improve our aquarium!</h3>
             </div>
 
-            <button class="redirect-button">CONTACT US</button>
+            <button class="redirect-button" onclick="contactUs()">CONTACT US</button>
         </section>
 
     </div>
 
     <footer>
 
+        <h3 class="footer-text">&copy; 2022 | Matthew Tane for ASG COMP6800001 - Human Computer Interaction</h3>
+
+        <div class="social-media-icons-container">
+            <a href="https://www.instagram.com/matthewtane1203/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/MisterSandbox" class="fa fa-twitter"></a>
+        </div>
     </footer>
 
 </body>

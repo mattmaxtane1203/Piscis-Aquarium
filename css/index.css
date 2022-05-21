@@ -15,9 +15,9 @@ h3 {
     text-align: center;
 }
 
-.content {
-    height: 100vh;
-}
+/* .content {
+    min-height: 100vh;
+} */
 
 .welcome {
     height: 100vh;
@@ -36,7 +36,7 @@ h3 {
     flex-direction: column;
 }
 
-.marine-life {
+.learn-more {
     height: 100vh;
     background-color: black;
     background-image: url(../assets/shutterstock_400476850.jpg);
@@ -48,7 +48,7 @@ h3 {
     align-items: center;
 }
 
-.marine-animals {
+.contact-us {
     height: 100vh;
     background-color: black;
     background-image: url(/assets/marine-animals.jpg);
