@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 75px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.content {
+    background-color: black;
+}
+
+.who-we-are {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/ocean-2.jpg);
+    background-size: cover;
+}
+
+.contact-us {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: url(../assets/white-sea-lion.jpg);
+    background-size: cover;
+}
+
+.content-column {
+    min-width: 50%;
+}
+
+.content-column > p {
+    margin: 100px;
+}
+
+.redirect-button {
+    width: 270px;
+    height: 50px;
+
+    background-color: #242F9B;
+    font-size: 20px;
+    border: 3px solid white;
+
+    margin-top: 10px;
+}
+
+.redirect-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: solid black
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    .who-we-are {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    h1 {
+        font-size: 50px;
+    }
+
+}
