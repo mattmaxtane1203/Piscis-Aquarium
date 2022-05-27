@@ -7,7 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contactsUs.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -27,7 +27,6 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <button class="navigation-button" onclick="home()">Home</button>
-        <button class="navigation-button" onclick="marineLife()">Marine Life</button>
         <button class="navigation-button" onclick="marineAnimals()">Marine Animals</button>
         <button class="navigation-button" onclick="aboutUs()">About Us</button>
     </div>
@@ -41,7 +40,6 @@
         <!-- Navigation Buttons -->
         <div class="navigation-buttons-container">
             <button class="navigation-button" onclick="home()">Home</button>
-            <button class="navigation-button" onclick="marineLife()">Marine Life</button>
             <button class="navigation-button" onclick="marineAnimals()">Marine Animals</button>
             <button class="navigation-button" onclick="aboutUs()">About Us</button>
         </div>
@@ -55,6 +53,41 @@
 
     </nav>
 
+    <div class="form">
+
+        <h1>CONTACT US</h1>
+
+        <form action="" method="get" id="contact-form">
+
+            <div class="row">
+                
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Insert your name here">
+
+            </div>
+
+            <div class="row">
+                
+                <label for="name">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Insert subject here">
+
+            </div>
+
+            <div class="row" id="body-form">
+                
+                <label for="name">Body</label>
+                <input type="text" name="body" id="body" placeholder="Type your letter here">
+
+            </div>
+
+            <p id="error"></p>
+
+            <button type="submit" id="send-btn">Send</button>
+            
+        </form>
+
+    </div>
+
     <footer>
 
         <h3 class="footer-text">&copy; 2022 | Matthew Tane for ASG COMP6800001 - Human Computer Interaction</h3>
@@ -66,4 +99,7 @@
     </footer>
     
 </body>
+
+<script src="../script/form.js" defer></script>
+
 </html>

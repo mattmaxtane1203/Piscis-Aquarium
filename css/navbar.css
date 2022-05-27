@@ -10,8 +10,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     background-color: #242F9B;
+
+    position: fixed;
     height: 75px;
+    width: 100%;
 }
 
 nav h1 {

@@ -1,5 +1,5 @@
 function hamburgerActive(){
-    const button = document.getElementById('hamburger');
+    const button = document.getElementById('arrow');
     const sidebar = document.getElementById('sidebar');
     button.classList.toggle('is-active');
     console.log(sidebar.style.display);
@@ -16,3 +16,4 @@ function closeSidebar(){
 }
 
 window.onresize = closeSidebar;
+
