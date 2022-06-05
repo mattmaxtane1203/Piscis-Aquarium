@@ -20,39 +20,26 @@
     <!-- Script -->
     <script src="../script/redirect.js"></script>
     <script src="../script/hamburger.js"></script>
+    <script src="https://kit.fontawesome.com/7c925acf6e.js" crossorigin="anonymous"></script>
 
 </head>
 
 <!-- Body -->
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-        <button class="navigation-button page-active">Home</button>
-        <button class="navigation-button" onclick="marineAnimals()">Marine Animals</button>
-        <button class="navigation-button" onclick="aboutUs()">About Us</button>
-    </div>
-    
-    <!-- Navigation Bar -->
     <nav>
-
-        <!-- Piscis Aquarium Logo -->
-        <h1>Piscis Aquarium</h1>
-
-        <!-- Navigation Buttons -->
-        <div class="navigation-buttons-container">
-            <button class="navigation-button page-active">Home</button>
-            <button class="navigation-button" onclick="marineAnimals()">Marine Animals</button>
-            <button class="navigation-button" onclick="aboutUs()">About Us</button>
+        <div class="logo">
+            NOKA3
         </div>
-
-        <!-- Hamburger -->
-        <button class="hamburger" id="hamburger" onclick="hamburgerActive()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/html/index.html">Home</a></li>
+            <li><a href="/html/marineAnimals.html">Marine Animals</a></li>
+            <li><a href="/html/aboutUs.html">About Us</a></li>
+        </ul>
     </nav>
 
     <!-- Content Section -->
