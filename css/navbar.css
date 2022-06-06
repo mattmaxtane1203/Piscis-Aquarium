@@ -3,11 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: 'Belleza', sans-serif;
   color: white;
-}
-
-.content {
-  background-color: black;
 }
 
 nav {
@@ -23,12 +20,6 @@ nav {
   z-index: 100;
 }
 
-nav .logo {
-  color: var(--white);
-  font-size: 40px;
-  font-weight: 600;
-}
-  
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
   font-size: 25px;
   font-weight: 500;
@@ -53,36 +44,32 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  /* color: #242F9B; */
-  color: black;
+  color: #242F9B;
   transition: 0.3s;
 }
 
-nav .menu-btn i {
+nav .logo {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+nav .dropdown-menu i {
   color: white;
   font-size: 2rem;
   cursor: pointer;
   display: none;
 }
 
-#click {
+#toggle {
   display: none;
 }
   
 @media (max-width: 800px) {
 
-  nav .menu-btn i {
-    display: block;
-  }
-
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
-
   nav ul {
     position: fixed;
     top: -100%;
-    background: var(--purple);
     height: fit-content;
     width: 100%;
     text-align: center;
@@ -90,30 +77,38 @@ nav .menu-btn i {
     transition: all 0.5s ease;
     z-index: -1;
   }
-
-  #click:checked ~ ul {
-    top: 80px;
+  
+  nav .dropdown-menu i {
+    display: block;
   }
 
+  #toggle:checked ~ .dropdown-menu i:before {
+    content: "\f00d";
+  }
+
+  #toggle:checked ~ ul li a {
+    margin-left: 0px;
+  }
+
+  #toggle:checked ~ ul {
+    top: 80px;
+  }
+  
   nav ul li {
     width: 100%;
     margin: 40px 0;
   }
-
+  
   nav ul li a {
     width: 100%;
     display: block;
     font-size: 1.5rem;
   }
-
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
-
+  
   nav ul li a.active,
   nav ul li a:hover {
     background: none;
-    color: black;
+    color: #242F9B;
   }
 
-  }
+}
