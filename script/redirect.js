@@ -17,3 +17,15 @@ function aboutUs(){
 function contactUs(){
     window.open("../html/contactUs.html", "_self");
 }
+
+function mammalsGallery(){
+    window.open("../html/mammalsGallery.html", "_self");
+}
+
+function vertebratesGallery(){
+    window.open("../html/vertebratesGallery.html", "_self");
+}
+
+function invertebratesGallery(){
+    window.open("../html/invertebratesGallery.html", "_self");
+}
