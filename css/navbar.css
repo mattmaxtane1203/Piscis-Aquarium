@@ -87,10 +87,6 @@ nav .dropdown-menu i {
     content: "\f00d";
   }
 
-  #toggle:checked ~ ul li a {
-    margin-left: 0px;
-  }
-
   #toggle:checked ~ ul {
     top: 80px;
   }
@@ -103,7 +99,7 @@ nav .dropdown-menu i {
   nav ul li a {
     width: 100%;
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   nav ul li a.active,

@@ -42,7 +42,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .row {
@@ -160,24 +159,43 @@ input {
     border: solid black
 }
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     
     h1 {
-        font-size: 75px;
+        font-size: 50px;
     }
 
     form {
-        width: 300px;
-    
-        display: flex;
-        flex-direction: column;
+        width: 400px;
+    }
+
+    .form-fields {
         justify-content: center;
-        align-items: center;
+    }
+
+    label {
+        font-size: 15px;
     }
 
     input {
-        height: 25px;
+        height: 30px;
         width: 200px;
+
+        font-size: 15px;
     }
 
-} */
+    .radio-btn {
+        height: 20px;
+        width: 20px;
+    }
+
+    #terms-and-conditions {
+        height: 15px;
+        width: 15px;
+    }
+
+    .terms-and-conditions-container {
+        font-size: 15px;
+    }
+
+}
