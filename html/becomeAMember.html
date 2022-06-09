@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contactsUs.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet"> 
+
+    <!-- Script -->
+    <script src="../script/redirect.js"></script>
+    <script src="../script/hamburger.js"></script>
+    <script src="https://kit.fontawesome.com/7c925acf6e.js" crossorigin="anonymous"></script>
+
+    <title>Register | Piscis Aquarium</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            Piscis Aquarium
+        </div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="dropdown-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/marineAnimals.html">Marine Animals</a></li>
+            <li><a href="/html/aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="form">
+
+        <div class="blank"></div>
+
+        <h1>Become a Member</h1>
+
+        <form action="" method="get" id="register-form">
+
+            <div class="form-fields">
+
+                <section class="labels">
+                    <div class="label-containers">
+                        
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="label-containers">
+
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <div class="label-containers">
+                        
+                        <label for="gender">Gender</label>
+                    </div>
+
+                </section>
+
+                <section class="input-fields">
+                    <div class="fields-containers">
+                        <input type="text" name="username" id="username" placeholder="Type username here">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="number" name="age" id="age" placeholder="Type age here">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="text" name="email" id="email" placeholder="e.g. mattmaxtane@gmail.com">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="password" name="password" id="password" placeholder="Type password here">
+                    </div>
+                    <div class="fields-containers">
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password here">
+                    </div>
+                    <div class="fields-containers" id="gender-btns">
+                        <div class="row">
+                            <input type="radio" name="gender" class="radio-btn" id="gender-male">Male
+                            <input type="radio" name="gender" class="radio-btn" id="gender-female">Female
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="terms-and-conditions-container">
+                <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">I agree with the terms and conditions
+            </div>
+            
+            <p id="error"></p>
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+
+    </div>
+
+    <footer>
+
+        <h3 class="footer-text">&copy; 2022 | Matthew Tane for ASG COMP6800001 - Human Computer Interaction</h3>
+
+        <div class="social-media-icons-container">
+            <a href="https://www.instagram.com/matthewtane1203/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/MisterSandbox" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="../script/form.js" defer></script>
+
+</html>

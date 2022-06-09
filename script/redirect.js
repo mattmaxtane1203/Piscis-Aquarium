@@ -14,8 +14,8 @@ function aboutUs(){
     window.open("../html/aboutUs.html", "_self");
 }
 
-function contactUs(){
-    window.open("../html/contactUs.html", "_self");
+function register(){
+    window.open("../html/becomeAMember.html", "_self");
 }
 
 function mammalsGallery(){

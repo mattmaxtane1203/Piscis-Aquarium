@@ -7,6 +7,11 @@
     color: white;
 }
 
+.blank {
+    height: 80px;
+    opacity: 0;
+}
+
 h1 {
     font-size: 100px;
 }
@@ -21,7 +26,7 @@ label {
 }
 
 .form {
-    min-height: 100vh;
+    min-height: 150vh;
     background-image: url(../assets/beluga-whale.jpg);
     background-size: cover;
 
@@ -37,12 +42,11 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .row {
     width: 100%;
-    margin-bottom: 10px;
 
     display: flex;
     flex-direction: row;
@@ -50,25 +54,95 @@ form {
     align-items: center;
 }
 
-.column {
-    min-width: 50%;
+form {
+    width: 800px;
+    height: 800px;
+    border-radius: 77px;
 
-    text-align: center;
-}
-
-#body-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-fields {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.labels {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.label-containers {
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-fields {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fields-containers {
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
 input {
-    height: 25px;
+    height: 30px;
     width: 300px;
 
     color: black;
+    font-size: 20px;
 }
+
+#gender-btns {
+    width: 100%;
+}
+
+.radio-btn {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+
+.terms-and-conditions-container {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+#terms-and-conditions {
+    height: 30px;
+    width: 30px;
+}
+
 
 #send-btn {
     width: 270px;
@@ -86,7 +160,7 @@ input {
     border: solid black
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     
     h1 {
         font-size: 75px;
@@ -106,4 +180,4 @@ input {
         width: 200px;
     }
 
-}
+} */
